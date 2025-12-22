@@ -1,0 +1,18 @@
+# @package _global_
+
+training:
+  batch_size: 32
+  num_epochs: 40
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: adam
+  scheduler:
+    name: reduce_lr_on_plateau
+    factor: 0.5
+    patience: 3
+  early_stopping:
+    patience: 8
+    monitor: val_loss
+    mode: min
+  num_workers: 4
+  pin_memory: true

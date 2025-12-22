@@ -1,0 +1,12 @@
+# @package _global_
+
+data:
+  dataset_name: RAVDESS
+  sample_rate: 16000
+  n_mels: 128
+  n_fft: 2048
+  hop_length: 512
+  duration: 3.0 # секунды для обрезки/падинга
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15

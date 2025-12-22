@@ -1,0 +1,21 @@
+defaults:
+  - data/preprocessing
+  - model/cnn
+  - training/train
+  - inference/inference
+
+# Глобальные настройки
+project_name: emotion_recognition
+seed: 42
+
+# MLflow настройки
+mlflow:
+  tracking_uri: http://127.0.0.1:8085
+  experiment_name: emotion_recognition
+
+# Пути
+paths:
+  data_dir: data/raw
+  processed_dir: data/processed
+  models_dir: models
+  plots_dir: plots

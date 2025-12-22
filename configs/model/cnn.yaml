@@ -1,0 +1,21 @@
+# @package _global_
+
+model:
+  name: EmotionCNN
+  num_classes: 8
+  input_channels: 1
+  conv_layers:
+    - filters: 32
+      kernel_size: 3
+      stride: 1
+      padding: 1
+    - filters: 64
+      kernel_size: 3
+      stride: 1
+      padding: 1
+    - filters: 128
+      kernel_size: 3
+      stride: 1
+      padding: 1
+  dropout: 0.3
+  fc_units: 256

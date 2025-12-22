@@ -1,0 +1,7 @@
+# @package _global_
+
+inference:
+  model_path: models/best_model-epoch=19-val_loss=1.03.ckpt
+  onnx_path: models/model.onnx
+  batch_size: 1
+  device: cpu
