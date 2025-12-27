@@ -136,7 +136,6 @@ data/*
 *.pkl
 *.csv
 *.json
-plots/
 .dvc/
 mlruns/
 *.wav
